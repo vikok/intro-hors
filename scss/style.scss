@@ -1,5 +1,7 @@
 @import "normalize";
 @import "layout";
+@import "slick";
+@import "_slider";
 
 body{
 
@@ -11,7 +13,7 @@ body{
 .ba-container{
 	padding-left: 20px;
 	padding-right: 20px;
-	max-width: 1200px;
+	max-width: 1170px;
 }
 
 
@@ -30,11 +32,22 @@ input[type="button"],
 button,
 .ba-button{
 	display: inline-block;
+	 	background-color:  #eecd31;
+	width: 184px;
+	height: 57px;
+	color:  rgba(255, 255, 255, 0.87);
+	font-size: 18px;
+	font-weight: 400;
+	text-decoration: none;
+	line-height: 57px;
+    border-radius: 25px;
+    text-align: center;
 }
 input[type="submit"]:hover,
 input[type="button"]:hover,
 button:hover,
 .ba-button:hover{
+	background: #F58220;
 
 }
 
@@ -62,4 +75,32 @@ select:focus {
 }
 textarea {
 
+}
+
+.ba-slider{
+	&__slide{
+	min-height: 100vh;
+	display: flex;
+	text-align: center;
+	color: #fff;
+	background: 50%;
+	background-size: cover;
+	p{
+	color:  rgba(255, 255, 255, 0.87);
+	font-size: 30px;
+	font-weight: 300;
+	}
+	}
+	.ba-container{
+	min-height: 100vh;
+	padding: 100px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	}
+}
+.ba-title{
+	color:  rgba(255, 255, 255, 0.87);
+	font-size: 80px;
+	font-weight: 400;
 }
